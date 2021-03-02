@@ -1,6 +1,6 @@
 #!/bin/bash
 
-minu=$(echo $1 | awk '{print $0"\\\\n"}')
-echo $minu
-#awk '{sub(/<-PAQUETESCATALOGO->/,"'$1'"); print}' archivo4.php >> archivo6.php
+#minu=$(echo $1 | awk '{print $0"\\\\n"}')
+#echo $minu
+awk '{sub(/<-NAME->/,"'$1'"); print}' template.txt >> catalogo_name.txt
 
